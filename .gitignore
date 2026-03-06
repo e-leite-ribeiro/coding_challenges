@@ -1,0 +1,7 @@
+# Ignore everything by default
+*
+
+# Keep source and build config
+!*.cpp
+!Makefile
+!.gitignore
