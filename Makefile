@@ -2,7 +2,8 @@ CXX = c++
 CPPFLAGS = -O2
 CXXFLAGS = -std=gnu++17 -Wall -Wextra -pedantic
 
-PROGRAMS := $(patsubst %.cpp,%,$(wildcard *.cpp))
+SOURCES := $(shell find . -type f -name '*.cpp')
+PROGRAMS := $(patsubst ./%.cpp,%,$(SOURCES))
 
 .PHONY: all clean
 

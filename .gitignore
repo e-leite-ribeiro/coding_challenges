@@ -1,6 +1,9 @@
 # Ignore everything by default
 *
 
+# Allow Git to traverse subdirectories
+!*/
+
 # Keep source and build config
 !*.cpp
 !Makefile
