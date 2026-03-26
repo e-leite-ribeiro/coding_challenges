@@ -21,7 +21,6 @@ int main() {
     ll total = b - a + 1;
     ll not_primes = count_divisible(b, primes) - count_divisible(a - 1, primes);
 
-    
     cout << total - not_primes << "\n";
 }
 
